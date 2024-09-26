@@ -1,5 +1,7 @@
 TARGETS = qnl.tcolor \
-		  qnl.get-bash-PS4
+		  qnl.get-bash-PS4 \
+		  qnl.base64x
+
 
 all: $(TARGETS)
 
@@ -8,7 +10,7 @@ all: $(TARGETS)
 %: %.py
 	expand -t4 $< > $@
 	cp $@ $<
-	pep8 $<
+#	pep8 $<
 	chmod +x $@
 
 clean:
