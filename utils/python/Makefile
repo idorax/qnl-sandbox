@@ -1,6 +1,7 @@
 TARGETS = qnl.tcolor \
-		  qnl.get-bash-PS4 \
-		  qnl.base64x
+	qnl.get-bash-PS4 \
+	qnl.base64x \
+	qnl.unicolor
 
 
 all: $(TARGETS)
